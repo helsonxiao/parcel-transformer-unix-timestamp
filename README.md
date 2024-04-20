@@ -2,9 +2,19 @@
 
 Transforms runtime-generated Unix timestamps into build-time constants.
 
+## Background
+
+In many business scenarios, different effects need to be activated based on specific time points. For instance, a promotional campaign might start at the beginning of the year, or a special visual effect might be displayed on a website during a holiday season. These time-based triggers are often represented as Unix timestamps, which are numerical values that represent the number of seconds that have passed since the Unix Epoch (January 1, 1970 00:00:00 GMT).
+
+However, Unix timestamps can be hard to read and understand, especially when they are hardcoded in the source code. This is where `dayjs("2024-01-01T00:00:00+08:00").unix()` comes in handy. It provides a human-readable string representation for the timestamp, making the code easier to understand and maintain.
+
 ## Advantages
 
-The main advantage of this plugin is performance optimization. By transforming Unix timestamps at build time, it reduces the computational load at runtime. This can lead to faster load times and a smoother user experience.
+This plugin takes this a step further by transforming these runtime-generated Unix timestamps into build-time constants. This has several advantages:
+
+- Performance Optimization: By calculating the Unix timestamps at build time, the plugin reduces the computational load at runtime. This can lead to faster load times and a smoother user experience.
+- Maintainability: The plugin allows developers to write timestamps in a human-readable string format, which improves the readability and maintainability of the code. At the same time, it ensures that the final code delivered to the browser uses the more efficient number format.
+- Ease of Use: The plugin is easy to set up and use. It can be added to any project with just a few lines of configuration.
 
 ## Usage
 
