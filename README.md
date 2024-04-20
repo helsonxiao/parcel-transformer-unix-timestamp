@@ -22,7 +22,7 @@ This plugin is currently not available as an npm package. However, you can manua
 
 ### Step 1: Create the Transformer File
 
-Create a new file named transformer-unix-timestamp.mjs in your project root directory. This file will contain the transformer code. Here’s the content for `transformer-unix-timestamp.mjs`:
+Create a new file named `transformer-unix-timestamp.mjs` in your project root directory. This file will contain the transformer code. Here’s the content:
 
 ```js
 import dayjs from "dayjs";
@@ -45,7 +45,7 @@ export default new Transformer({
 
 ### Step 2: Update Parcel Configuration
 
-Next, create or update the `.parcelrc` file in your project root directory. This file tells Parcel to use the `transformer-unix-timestamp.mjs` transformer for all `.js`, `.jsx`, `.ts`, and `.tsx` files. Here’s the content for .parcelrc:
+Next, create or update the `.parcelrc` file in your project root directory. This file tells Parcel to use the `transformer-unix-timestamp.mjs` transformer for all `.js`, `.jsx`, `.ts`, and `.tsx` files. Here’s the content:
 
 ```
 {
